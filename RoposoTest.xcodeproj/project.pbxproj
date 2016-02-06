@@ -36,6 +36,7 @@
 		13E4EC921C662CB600DECBB8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC841C662CB600DECBB8 /* UIImageView+WebCache.m */; };
 		13E4EC931C662CB600DECBB8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC861C662CB600DECBB8 /* UIView+WebCacheOperation.m */; };
 		13E4EC9A1C662D8C00DECBB8 /* ImageCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC991C662D8C00DECBB8 /* ImageCacheVC.m */; };
+		13E4EC9E1C662EEE00DECBB8 /* Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC9D1C662EEE00DECBB8 /* Validate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		13E4EC861C662CB600DECBB8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		13E4EC981C662D8C00DECBB8 /* ImageCacheVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheVC.h; sourceTree = "<group>"; };
 		13E4EC991C662D8C00DECBB8 /* ImageCacheVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheVC.m; sourceTree = "<group>"; };
+		13E4EC9C1C662EEE00DECBB8 /* Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate.h; sourceTree = "<group>"; };
+		13E4EC9D1C662EEE00DECBB8 /* Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,7 @@
 		1334B5D21C65C1E500F8E254 /* RoposoTest */ = {
 			isa = PBXGroup;
 			children = (
+				13E4EC9B1C662EEE00DECBB8 /* Validation */,
 				13E4EC971C662D8C00DECBB8 /* ImageCache */,
 				13E4EC671C662CB600DECBB8 /* ThirdPartyLibrary */,
 				136829CF1C65DF7000C5DAFF /* AppDelegate */,
@@ -303,6 +307,15 @@
 			path = ImageCache;
 			sourceTree = "<group>";
 		};
+		13E4EC9B1C662EEE00DECBB8 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				13E4EC9C1C662EEE00DECBB8 /* Validate.h */,
+				13E4EC9D1C662EEE00DECBB8 /* Validate.m */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E4EC9E1C662EEE00DECBB8 /* Validate.m in Sources */,
 				13E4EC901C662CB600DECBB8 /* UIImage+MultiFormat.m in Sources */,
 				13E4EC8B1C662CB600DECBB8 /* SDWebImageCompat.m in Sources */,
 				13E4EC8E1C662CB600DECBB8 /* SDWebImagePrefetcher.m in Sources */,
