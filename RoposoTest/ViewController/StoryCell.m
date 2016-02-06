@@ -15,11 +15,13 @@
 {
     
 }
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) Feed *feedObj;
 @property (weak, nonatomic) IBOutlet UILabel *titleLbl;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLbl;
-@property (weak, nonatomic) IBOutlet UIImageView *imageVieww;
+@property (weak, nonatomic) IBOutlet UIImageView *imageVieww,*userProfileImagView;
 @property (weak,nonatomic)  IBOutlet UILabel *userNameLbl;
+@property (weak,nonatomic)  IBOutlet UIButton *followBtn;
 @end
 
 @implementation StoryCell
@@ -38,6 +40,12 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    self.containerView.layer.cornerRadius = 5.0f;
+    self.containerView.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+    self.containerView.layer.shadowOpacity = 0.4;
+    self.containerView.layer.shadowRadius = 1;
+    self.containerView.layer.shadowOffset = CGSizeMake(1.2, 1.2);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

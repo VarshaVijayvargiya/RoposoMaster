@@ -23,7 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.tableView.estimatedRowHeight = 55.0f;
+
     [self getDataFromJson];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +78,11 @@
     return authorCell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *) indexPath
+{
+    
+    return UITableViewAutomaticDimension;
+}
 #pragma  mark - Local data modal
 
 -(NSInteger)feedsCount {
@@ -119,7 +128,6 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"json"];
     NSData *JSONData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:nil];
     [self addFeeds:[NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers error:nil]];
-    
 }
 
 

@@ -19,9 +19,11 @@
 @property (strong, nonatomic) Feed *feedObj;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *aboutUserLbl;
+@property (weak,nonatomic)  IBOutlet UILabel *handleLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *userProfileImageView;
 @property (weak,nonatomic)  IBOutlet UILabel *followingCountLbl, *followerCountLbl;
 @property (weak,nonatomic) IBOutlet UIButton *followBtn;
+
 
 @end
 @implementation AuthorCell
@@ -62,6 +64,7 @@
     self.aboutUserLbl.text = self.feedObj.short_description;
     self.followerCountLbl.text =self.feedObj.followers;
     self.followingCountLbl.text =self.feedObj.following;
+    self.handleLbl.text = self.feedObj.handle;
     
     BOOL is_following = self.feedObj.is_following;
     
