@@ -2,14 +2,17 @@
 //  AppDelegate.m
 //  RoposoTest
 //
-//  Created by Okutech on 2/6/16.
+//  Created by Varsha on 2/6/16.
 //
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
+@property(nonatomic,retain) ViewController *viewController;
+@property(nonatomic,retain) UINavigationController *nav;
 @end
 
 @implementation AppDelegate
@@ -17,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.nav=[[UINavigationController alloc]initWithRootViewController:self.viewController];
+    self.window.rootViewController = self.nav;
     return YES;
 }
 

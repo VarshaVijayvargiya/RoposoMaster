@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1334B5D51C65C1E500F8E254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334B5D41C65C1E500F8E254 /* main.m */; };
-		1334B5D81C65C1E500F8E254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334B5D71C65C1E500F8E254 /* AppDelegate.m */; };
-		1334B5DB1C65C1E500F8E254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334B5DA1C65C1E500F8E254 /* ViewController.m */; };
-		1334B5DE1C65C1E500F8E254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1334B5DC1C65C1E500F8E254 /* Main.storyboard */; };
 		1334B5E01C65C1E500F8E254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1334B5DF1C65C1E500F8E254 /* Assets.xcassets */; };
 		1334B5E31C65C1E500F8E254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1334B5E11C65C1E500F8E254 /* LaunchScreen.storyboard */; };
 		1334B5EE1C65C1E500F8E254 /* RoposoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334B5ED1C65C1E500F8E254 /* RoposoTestTests.m */; };
 		1334B5F91C65C1E500F8E254 /* RoposoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334B5F81C65C1E500F8E254 /* RoposoTestUITests.m */; };
+		136829C81C65DE6200C5DAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136829C71C65DE6200C5DAFF /* Main.storyboard */; };
+		136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829CB1C65DF4A00C5DAFF /* ViewController.m */; };
+		136829CE1C65DF4A00C5DAFF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136829CC1C65DF4A00C5DAFF /* ViewController.xib */; };
+		136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829D11C65DF7000C5DAFF /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,6 @@
 /* Begin PBXFileReference section */
 		1334B5D01C65C1E500F8E254 /* RoposoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoposoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1334B5D41C65C1E500F8E254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1334B5D61C65C1E500F8E254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1334B5D71C65C1E500F8E254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1334B5D91C65C1E500F8E254 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1334B5DA1C65C1E500F8E254 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1334B5DD1C65C1E500F8E254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1334B5DF1C65C1E500F8E254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1334B5E21C65C1E500F8E254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1334B5E41C65C1E500F8E254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,12 @@
 		1334B5F41C65C1E500F8E254 /* RoposoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoposoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1334B5F81C65C1E500F8E254 /* RoposoTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoposoTestUITests.m; sourceTree = "<group>"; };
 		1334B5FA1C65C1E500F8E254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		136829C71C65DE6200C5DAFF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		136829CA1C65DF4A00C5DAFF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		136829CB1C65DF4A00C5DAFF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		136829CC1C65DF4A00C5DAFF /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		136829D01C65DF7000C5DAFF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		136829D11C65DF7000C5DAFF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,11 @@
 		1334B5D21C65C1E500F8E254 /* RoposoTest */ = {
 			isa = PBXGroup;
 			children = (
-				1334B5D61C65C1E500F8E254 /* AppDelegate.h */,
-				1334B5D71C65C1E500F8E254 /* AppDelegate.m */,
-				1334B5D91C65C1E500F8E254 /* ViewController.h */,
-				1334B5DA1C65C1E500F8E254 /* ViewController.m */,
-				1334B5DC1C65C1E500F8E254 /* Main.storyboard */,
+				136829CF1C65DF7000C5DAFF /* AppDelegate */,
+				136829C91C65DF4A00C5DAFF /* ViewController */,
 				1334B5DF1C65C1E500F8E254 /* Assets.xcassets */,
 				1334B5E11C65C1E500F8E254 /* LaunchScreen.storyboard */,
+				136829C71C65DE6200C5DAFF /* Main.storyboard */,
 				1334B5E41C65C1E500F8E254 /* Info.plist */,
 				1334B5D31C65C1E500F8E254 /* Supporting Files */,
 			);
@@ -138,6 +138,25 @@
 				1334B5FA1C65C1E500F8E254 /* Info.plist */,
 			);
 			path = RoposoTestUITests;
+			sourceTree = "<group>";
+		};
+		136829C91C65DF4A00C5DAFF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				136829CA1C65DF4A00C5DAFF /* ViewController.h */,
+				136829CB1C65DF4A00C5DAFF /* ViewController.m */,
+				136829CC1C65DF4A00C5DAFF /* ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		136829CF1C65DF7000C5DAFF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				136829D01C65DF7000C5DAFF /* AppDelegate.h */,
+				136829D11C65DF7000C5DAFF /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +263,8 @@
 			files = (
 				1334B5E31C65C1E500F8E254 /* LaunchScreen.storyboard in Resources */,
 				1334B5E01C65C1E500F8E254 /* Assets.xcassets in Resources */,
-				1334B5DE1C65C1E500F8E254 /* Main.storyboard in Resources */,
+				136829CE1C65DF4A00C5DAFF /* ViewController.xib in Resources */,
+				136829C81C65DE6200C5DAFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1334B5DB1C65C1E500F8E254 /* ViewController.m in Sources */,
-				1334B5D81C65C1E500F8E254 /* AppDelegate.m in Sources */,
+				136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */,
 				1334B5D51C65C1E500F8E254 /* main.m in Sources */,
+				136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +327,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1334B5DC1C65C1E500F8E254 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1334B5DD1C65C1E500F8E254 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1334B5E11C65C1E500F8E254 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -495,6 +507,7 @@
 				1334B5FF1C65C1E500F8E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1334B6001C65C1E500F8E254 /* Build configuration list for PBXNativeTarget "RoposoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +516,7 @@
 				1334B6021C65C1E500F8E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1334B6031C65C1E500F8E254 /* Build configuration list for PBXNativeTarget "RoposoTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +525,7 @@
 				1334B6051C65C1E500F8E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

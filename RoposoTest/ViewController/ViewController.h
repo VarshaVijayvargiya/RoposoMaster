@@ -2,7 +2,7 @@
 //  ViewController.h
 //  RoposoTest
 //
-//  Created by Okutech on 2/6/16.
+//  Created by Varsha on 2/6/16.
 //
 //
 
@@ -10,6 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
 @end
-
