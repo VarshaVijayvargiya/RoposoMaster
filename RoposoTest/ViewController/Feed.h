@@ -26,7 +26,7 @@ typedef enum : NSUInteger {
 @property(nonatomic, strong, readonly) NSString *image;
 @property(nonatomic, strong, readonly) NSString *url;
 @property(nonatomic, strong, readonly) NSString *handle;
-@property(nonatomic,readonly) BOOL is_following;
+@property(nonatomic,readonly) NSString *is_following;
 @property (nonatomic,strong) NSString *createdOn;
 
 @property(nonatomic, strong, readonly) NSString *verb;

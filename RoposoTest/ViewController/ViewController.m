@@ -12,7 +12,7 @@
 #import "StoryCell.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<AuthorCellDelegate,StoryCellDelegate>
 {
     NSMutableArray *feedsMutableArray;
 }
@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.tableView.estimatedRowHeight = 55.0f;
+    self.tableView.estimatedRowHeight = 500;
 
     [self getDataFromJson];
     
@@ -111,12 +111,14 @@
 
 - (void)configureAuthorCell:(AuthorCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    cell.delegate =self;
     [cell displayCellData:[self feedAtIndex:indexPath.section]];
     
 }
 
 - (void)configureStoryCell:(StoryCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    cell.delegate =self;
     [cell displayCellData:[self feedAtIndex:indexPath.section]];
    
 }
@@ -131,5 +133,39 @@
 }
 
 
+
+#pragma mark - delegate method for Follow Button
+
+-(void)authorFollowBtnTappedAction:(id)sender
+{
+       [self setValyeForFollowBtn:sender];
+
+}
+
+
+-(void)storyFollowBtnTappedAction:(id)sender
+{
+    [self setValyeForFollowBtn:sender];
+
+}
+
+
+-(void)setValyeForFollowBtn:(id)sender
+{
+    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]isEqualToString:@"0"]) {
+        
+        [sender setBackgroundColor:[UIColor greenColor]];
+        [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:@"is_following"];
+    }
+    else
+    {
+        [sender setBackgroundColor:[UIColor lightGrayColor]];
+        [[NSUserDefaults standardUserDefaults]setObject:@"0" forKey:@"is_following"];
+        
+        
+    }
+    
+    [self.tableView reloadData];
+}
 
 @end

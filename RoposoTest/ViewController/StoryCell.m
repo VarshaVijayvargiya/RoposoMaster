@@ -64,9 +64,21 @@
     _descriptionLbl.text = self.feedObj.short_description;
     
     NSString *imagePath=[NSString stringWithFormat:@"%@",self.feedObj.si];
-    [self getImagee:imagePath name:[self.feedObj.userName capitalizedString] profileImage:self.imageVieww];
-    _userNameLbl =[[NSUserDefaults standardUserDefaults] valueForKey:@"username"];
+    [self getImagee:imagePath name:[[NSUserDefaults standardUserDefaults] valueForKey:@"userName"] profileImage:self.imageVieww];
+    _userNameLbl.text =[[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
     
+    [self getImagee:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"Image"]] name:[[NSUserDefaults standardUserDefaults] valueForKey:@"userName"] profileImage:self.userProfileImagView];
+    
+    
+    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]isEqualToString:@"0"]) {
+        
+        [self.followBtn setBackgroundColor:[UIColor lightGrayColor]];
+    }
+    else
+    {
+        
+        [self.followBtn setBackgroundColor:[UIColor greenColor]];
+    }
     
     
 }
@@ -85,4 +97,17 @@
                            }];
     
 }
+
+
+
+-(IBAction)followBtnAction:(id)sender
+{
+    
+    if ([_delegate respondsToSelector:@selector(storyFollowBtnTappedAction:)])
+    {
+        [_delegate storyFollowBtnTappedAction:sender];
+    }
+    
+}
+
 @end

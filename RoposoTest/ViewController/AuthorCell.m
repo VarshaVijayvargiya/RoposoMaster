@@ -56,7 +56,7 @@
     
     self.feedObj = (Feed *)data;
     [[NSUserDefaults standardUserDefaults]setObject:self.feedObj.userName  forKey:@"userName"];
-    
+    [[NSUserDefaults standardUserDefaults]setObject:self.feedObj.image  forKey:@"Image"];
     NSString *imagePath=[NSString stringWithFormat:@"%@",self.feedObj.image];
     [self getImagee:imagePath name:[self.feedObj.userName capitalizedString] profileImage:self.userProfileImageView];
     
@@ -66,13 +66,20 @@
     self.followingCountLbl.text =self.feedObj.following;
     self.handleLbl.text = self.feedObj.handle;
     
-    BOOL is_following = self.feedObj.is_following;
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]==nil) {
+        NSString *is_following = [NSString stringWithFormat:@"%@",self.feedObj.is_following];
+        [[NSUserDefaults standardUserDefaults]setObject:is_following forKey:@"is_following"];
+    }
+   
     
-    if(is_following){
-        self.followBtn.tintColor=[UIColor blueColor];
+    
+    if([[[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]isEqualToString:@"0"]){
+        [self.followBtn setBackgroundColor:[UIColor lightGrayColor]];
+        
     }
     else{
-        self.followBtn.tintColor = [UIColor lightGrayColor];
+        
+        [self.followBtn setBackgroundColor:[UIColor greenColor]];
     }
     
 }
@@ -87,6 +94,18 @@
                                    profileImage.image=image;
                                }
                            }];
+    
+}
+
+
+
+-(IBAction)followBtnAction:(id)sender
+{
+    
+    if ([_delegate respondsToSelector:@selector(authorFollowBtnTappedAction:)])
+    {
+        [_delegate authorFollowBtnTappedAction:sender];
+    }
     
 }
 

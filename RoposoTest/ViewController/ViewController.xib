@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="7" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-za-ORg">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="-35" width="320" height="568"/>
                     <animations/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -32,8 +32,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="mvU-za-ORg" secondAttribute="trailing" id="Eww-tf-4DF"/>
-                <constraint firstItem="mvU-za-ORg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LaQ-C3-jIO"/>
-                <constraint firstAttribute="bottom" secondItem="mvU-za-ORg" secondAttribute="bottom" id="m6z-9o-TKQ"/>
+                <constraint firstItem="mvU-za-ORg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-35" id="LaQ-C3-jIO"/>
+                <constraint firstAttribute="bottom" secondItem="mvU-za-ORg" secondAttribute="bottom" constant="35" id="m6z-9o-TKQ"/>
                 <constraint firstItem="mvU-za-ORg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wZh-Sv-Dwy"/>
             </constraints>
             <point key="canvasLocation" x="232" y="335"/>
