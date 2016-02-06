@@ -16,6 +16,11 @@
 		136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829CB1C65DF4A00C5DAFF /* ViewController.m */; };
 		136829CE1C65DF4A00C5DAFF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136829CC1C65DF4A00C5DAFF /* ViewController.xib */; };
 		136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829D11C65DF7000C5DAFF /* AppDelegate.m */; };
+		13E4EC581C65E2A900DECBB8 /* AuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC561C65E2A900DECBB8 /* AuthorCell.m */; };
+		13E4EC591C65E2A900DECBB8 /* AuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC571C65E2A900DECBB8 /* AuthorCell.xib */; };
+		13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */; };
+		13E4EC5E1C65E4D700DECBB8 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */; };
+		13E4EC601C65E89500DECBB8 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC5F1C65E89500DECBB8 /* Data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		136829CC1C65DF4A00C5DAFF /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		136829D01C65DF7000C5DAFF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		136829D11C65DF7000C5DAFF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13E4EC551C65E2A900DECBB8 /* AuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorCell.h; sourceTree = "<group>"; };
+		13E4EC561C65E2A900DECBB8 /* AuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorCell.m; sourceTree = "<group>"; };
+		13E4EC571C65E2A900DECBB8 /* AuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorCell.xib; sourceTree = "<group>"; };
+		13E4EC5A1C65E4D700DECBB8 /* StoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCell.h; sourceTree = "<group>"; };
+		13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCell.m; sourceTree = "<group>"; };
+		13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
+		13E4EC5F1C65E89500DECBB8 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 		1334B5D31C65C1E500F8E254 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13E4EC5F1C65E89500DECBB8 /* Data.json */,
 				1334B5D41C65C1E500F8E254 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -146,6 +159,12 @@
 				136829CA1C65DF4A00C5DAFF /* ViewController.h */,
 				136829CB1C65DF4A00C5DAFF /* ViewController.m */,
 				136829CC1C65DF4A00C5DAFF /* ViewController.xib */,
+				13E4EC551C65E2A900DECBB8 /* AuthorCell.h */,
+				13E4EC561C65E2A900DECBB8 /* AuthorCell.m */,
+				13E4EC571C65E2A900DECBB8 /* AuthorCell.xib */,
+				13E4EC5A1C65E4D700DECBB8 /* StoryCell.h */,
+				13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */,
+				13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -262,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1334B5E31C65C1E500F8E254 /* LaunchScreen.storyboard in Resources */,
+				13E4EC5E1C65E4D700DECBB8 /* StoryCell.xib in Resources */,
 				1334B5E01C65C1E500F8E254 /* Assets.xcassets in Resources */,
 				136829CE1C65DF4A00C5DAFF /* ViewController.xib in Resources */,
+				13E4EC601C65E89500DECBB8 /* Data.json in Resources */,
+				13E4EC591C65E2A900DECBB8 /* AuthorCell.xib in Resources */,
 				136829C81C65DE6200C5DAFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */,
+				13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */,
 				1334B5D51C65C1E500F8E254 /* main.m in Sources */,
+				13E4EC581C65E2A900DECBB8 /* AuthorCell.m in Sources */,
 				136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
