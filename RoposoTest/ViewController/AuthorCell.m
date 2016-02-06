@@ -53,6 +53,7 @@
    
     
     self.feedObj = (Feed *)data;
+    [[NSUserDefaults standardUserDefaults]setObject:self.feedObj.userName  forKey:@"userName"];
     
     NSString *imagePath=[NSString stringWithFormat:@"%@",self.feedObj.image];
     [self getImagee:imagePath name:[self.feedObj.userName capitalizedString] profileImage:self.userProfileImageView];

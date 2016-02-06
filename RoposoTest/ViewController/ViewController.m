@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self getDataFromJson];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +49,7 @@
 {
     
     Feed *feed = [self feedAtIndex:indexPath.section];
-    if (feed.feedType == HEADER) {
+    if (feed.feedType == STORY) {
         
         StoryCell *cell = (StoryCell *)[self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
         
@@ -73,31 +74,6 @@
     return authorCell;
 }
 
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *) indexPath
-//{
-//    
-//    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1)
-//    {
-//        Feed *feed = [self feedAtIndex:indexPath.section];
-//        
-//         if (feed.feedType == HEADER)
-//        {
-//            CGFloat height = [self calculateHeight:feed];
-//            return height;
-//        }
-//        else if (feed.feedType == STORY)
-//        {
-//            CGFloat height = [self calculateCustomFeedHeight:feed];
-//            return height;
-//        }
-//    }
-//    
-//    return UITableViewAutomaticDimension;
-//}
-
-
-
 #pragma  mark - Local data modal
 
 -(NSInteger)feedsCount {
@@ -110,6 +86,20 @@
     return [feedsMutableArray objectAtIndex:index];
 }
 
+-(void)addFeeds:(NSArray *)array
+{
+    if (!feedsMutableArray) {
+        feedsMutableArray = [NSMutableArray array];
+    }
+    
+    for (NSDictionary *obj in array) {
+        Feed *feed = [Feed createFeedWithData:obj];
+        [feedsMutableArray addObject:feed];
+    }
+    
+}
+
+
 - (void)configureAuthorCell:(AuthorCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell displayCellData:[self feedAtIndex:indexPath.section]];
@@ -120,6 +110,16 @@
 {
     [cell displayCellData:[self feedAtIndex:indexPath.section]];
    
+}
+
+
+
+-(void)getDataFromJson
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"json"];
+    NSData *JSONData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:nil];
+    [self addFeeds:[NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers error:nil]];
+    
 }
 
 

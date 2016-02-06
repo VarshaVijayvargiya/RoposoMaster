@@ -32,9 +32,9 @@
             _type              = dic[@"type"];
             _title             = dic[@"title"];
             _like_flag         = [NSString stringWithFormat:@"%@",dic[@"like_flag"]];
-            _likes_count       =[NSString stringWithFormat:@"%@",dic[@"likes_count"]];
-            _comment_count     =[NSString stringWithFormat:@"%@",dic[@"comment_count"]];
-            _feedType          =STORY;
+            _likes_count       = [NSString stringWithFormat:@"%@",dic[@"likes_count"]];
+            _comment_count     = [NSString stringWithFormat:@"%@",dic[@"comment_count"]];
+            _feedType          = STORY;
             
         }
         else

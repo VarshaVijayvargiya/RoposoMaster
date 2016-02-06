@@ -11,4 +11,6 @@
 @interface StoryCell : UITableViewCell
 
 +(instancetype)storyCell;
+
+-(void)displayCellData:(id)data;
 @end
