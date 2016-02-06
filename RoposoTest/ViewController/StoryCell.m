@@ -10,6 +10,18 @@
 
 @implementation StoryCell
 
+
++(instancetype)storyCell
+{
+    // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+    id cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];
+    
+    if (cell) {
+        return cell;
+    }
+    return nil;
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }

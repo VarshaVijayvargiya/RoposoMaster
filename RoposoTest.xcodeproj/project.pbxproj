@@ -21,6 +21,7 @@
 		13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */; };
 		13E4EC5E1C65E4D700DECBB8 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */; };
 		13E4EC601C65E89500DECBB8 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC5F1C65E89500DECBB8 /* Data.json */; };
+		13E4EC661C65E9D600DECBB8 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC651C65E9D600DECBB8 /* Feed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCell.m; sourceTree = "<group>"; };
 		13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
 		13E4EC5F1C65E89500DECBB8 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		13E4EC641C65E9D600DECBB8 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		13E4EC651C65E9D600DECBB8 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				13E4EC5A1C65E4D700DECBB8 /* StoryCell.h */,
 				13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */,
 				13E4EC5C1C65E4D700DECBB8 /* StoryCell.xib */,
+				13E4EC641C65E9D600DECBB8 /* Feed.h */,
+				13E4EC651C65E9D600DECBB8 /* Feed.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */,
 				13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */,
 				1334B5D51C65C1E500F8E254 /* main.m in Sources */,
+				13E4EC661C65E9D600DECBB8 /* Feed.m in Sources */,
 				13E4EC581C65E2A900DECBB8 /* AuthorCell.m in Sources */,
 				136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */,
 			);
