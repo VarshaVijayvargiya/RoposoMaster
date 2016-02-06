@@ -8,6 +8,9 @@
 
 #import "AuthorCell.h"
 #import "Feed.h"
+#import "ImageCacheVC.h"
+#import "UIImageView+WebCache.h"
+
 
 @interface AuthorCell()
 {

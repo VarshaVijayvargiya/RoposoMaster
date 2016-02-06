@@ -119,7 +119,7 @@
 - (void)configureStoryCell:(StoryCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell displayCellData:[self feedAtIndex:indexPath.section]];
-    cell.delegate = self;
+   
 }
 
 
