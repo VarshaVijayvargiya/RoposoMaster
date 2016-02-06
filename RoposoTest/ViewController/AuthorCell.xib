@@ -167,12 +167,12 @@
                     <constraint firstItem="ZBJ-Vd-4vO" firstAttribute="top" secondItem="jcQ-Zf-CO4" secondAttribute="bottom" constant="9" id="S0v-c6-GTo"/>
                     <constraint firstItem="NR8-uK-VuR" firstAttribute="top" secondItem="6dT-69-jBF" secondAttribute="bottom" constant="4" id="Uni-e4-ipw"/>
                     <constraint firstItem="ukm-3d-mb1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aO0-I0-NQO"/>
-                    <constraint firstItem="6dT-69-jBF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="116" id="cMQ-fc-nIP"/>
+                    <constraint firstItem="6dT-69-jBF" firstAttribute="centerX" secondItem="ukm-3d-mb1" secondAttribute="centerX" id="clz-IZ-4Ae"/>
                     <constraint firstItem="JDz-s4-0US" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="iBs-Hl-4zb"/>
                     <constraint firstAttribute="trailingMargin" secondItem="JDz-s4-0US" secondAttribute="trailing" constant="-8" id="lsZ-0m-Fnj"/>
                     <constraint firstItem="jcQ-Zf-CO4" firstAttribute="top" secondItem="JDz-s4-0US" secondAttribute="bottom" constant="18" id="mpl-Hd-GRI"/>
-                    <constraint firstItem="NR8-uK-VuR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="130" id="uV5-ZD-Xz3"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jcQ-Zf-CO4" secondAttribute="trailing" id="voI-YA-6rf"/>
+                    <constraint firstItem="NR8-uK-VuR" firstAttribute="centerX" secondItem="6dT-69-jBF" secondAttribute="centerX" id="xeO-Fc-nIx"/>
                     <constraint firstItem="o1Y-Rw-kRe" firstAttribute="centerY" secondItem="JDz-s4-0US" secondAttribute="centerY" id="yDR-uA-4dB"/>
                 </constraints>
             </tableViewCellContentView>
