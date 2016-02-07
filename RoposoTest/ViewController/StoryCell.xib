@@ -36,12 +36,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-eA-Y69">
-                                <rect key="frame" x="233" y="18" width="59" height="30"/>
+                                <rect key="frame" x="217" y="18" width="75" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Qyg-Xx-hoS"/>
-                                    <constraint firstAttribute="width" constant="59" id="u2t-Zc-bBi"/>
+                                    <constraint firstAttribute="width" constant="75" id="u2t-Zc-bBi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Follow">

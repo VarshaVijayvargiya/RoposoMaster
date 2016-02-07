@@ -75,11 +75,13 @@
     
     if([[[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]isEqualToString:@"0"]){
         [self.followBtn setBackgroundColor:[UIColor lightGrayColor]];
+         [self.followBtn setTitle:@"Follow" forState:UIControlStateNormal];
         
     }
     else{
         
         [self.followBtn setBackgroundColor:[HexColor setbuttonColor]];
+        [self.followBtn setTitle:@"Following" forState:UIControlStateNormal];
     }
     
 }

@@ -157,11 +157,13 @@
         
         [sender setBackgroundColor:[HexColor setbuttonColor]];
         [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:@"is_following"];
+        [sender setTitle:@"Following" forState:UIControlStateNormal];
     }
     else
     {
         [sender setBackgroundColor:[UIColor lightGrayColor]];
         [[NSUserDefaults standardUserDefaults]setObject:@"0" forKey:@"is_following"];
+        [sender setTitle:@"Follow" forState:UIControlStateNormal];
         
         
     }
