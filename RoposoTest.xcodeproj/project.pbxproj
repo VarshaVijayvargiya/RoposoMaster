@@ -16,6 +16,7 @@
 		136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829CB1C65DF4A00C5DAFF /* ViewController.m */; };
 		136829CE1C65DF4A00C5DAFF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136829CC1C65DF4A00C5DAFF /* ViewController.xib */; };
 		136829D21C65DF7000C5DAFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136829D11C65DF7000C5DAFF /* AppDelegate.m */; };
+		137F675D1C66E8F9003CD54B /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 137F675C1C66E8F9003CD54B /* HexColor.m */; };
 		13E4EC581C65E2A900DECBB8 /* AuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC561C65E2A900DECBB8 /* AuthorCell.m */; };
 		13E4EC591C65E2A900DECBB8 /* AuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E4EC571C65E2A900DECBB8 /* AuthorCell.xib */; };
 		13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC5B1C65E4D700DECBB8 /* StoryCell.m */; };
@@ -74,6 +75,8 @@
 		136829CC1C65DF4A00C5DAFF /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		136829D01C65DF7000C5DAFF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		136829D11C65DF7000C5DAFF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		137F675B1C66E8F9003CD54B /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
+		137F675C1C66E8F9003CD54B /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 		13E4EC551C65E2A900DECBB8 /* AuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorCell.h; sourceTree = "<group>"; };
 		13E4EC561C65E2A900DECBB8 /* AuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorCell.m; sourceTree = "<group>"; };
 		13E4EC571C65E2A900DECBB8 /* AuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorCell.xib; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 		1334B5D21C65C1E500F8E254 /* RoposoTest */ = {
 			isa = PBXGroup;
 			children = (
+				137F675A1C66E8F9003CD54B /* Hexcolor */,
 				13E4EC9B1C662EEE00DECBB8 /* Validation */,
 				13E4EC971C662D8C00DECBB8 /* ImageCache */,
 				13E4EC671C662CB600DECBB8 /* ThirdPartyLibrary */,
@@ -230,6 +234,15 @@
 				136829D11C65DF7000C5DAFF /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		137F675A1C66E8F9003CD54B /* Hexcolor */ = {
+			isa = PBXGroup;
+			children = (
+				137F675B1C66E8F9003CD54B /* HexColor.h */,
+				137F675C1C66E8F9003CD54B /* HexColor.m */,
+			);
+			path = Hexcolor;
 			sourceTree = "<group>";
 		};
 		13E4EC671C662CB600DECBB8 /* ThirdPartyLibrary */ = {
@@ -458,6 +471,7 @@
 				13E4EC931C662CB600DECBB8 /* UIView+WebCacheOperation.m in Sources */,
 				13E4EC881C662CB600DECBB8 /* SDWebImageDownloader.m in Sources */,
 				136829CD1C65DF4A00C5DAFF /* ViewController.m in Sources */,
+				137F675D1C66E8F9003CD54B /* HexColor.m in Sources */,
 				13E4EC8C1C662CB600DECBB8 /* SDWebImageDecoder.m in Sources */,
 				13E4EC8D1C662CB600DECBB8 /* SDWebImageManager.m in Sources */,
 				13E4EC5D1C65E4D700DECBB8 /* StoryCell.m in Sources */,

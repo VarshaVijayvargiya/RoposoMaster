@@ -10,7 +10,7 @@
 #import "Feed.h"
 #import "ImageCacheVC.h"
 #import "UIImageView+WebCache.h"
-
+#import "HexColor.h"
 
 @interface AuthorCell()
 {
@@ -79,7 +79,7 @@
     }
     else{
         
-        [self.followBtn setBackgroundColor:[UIColor greenColor]];
+        [self.followBtn setBackgroundColor:[HexColor setbuttonColor]];
     }
     
 }

@@ -10,6 +10,7 @@
 #import "Feed.h"
 #import "AuthorCell.h"
 #import "StoryCell.h"
+#import "HexColor.h"
 
 
 @interface ViewController ()<AuthorCellDelegate,StoryCellDelegate>
@@ -154,7 +155,7 @@
 {
     if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"is_following"]isEqualToString:@"0"]) {
         
-        [sender setBackgroundColor:[UIColor greenColor]];
+        [sender setBackgroundColor:[HexColor setbuttonColor]];
         [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:@"is_following"];
     }
     else
